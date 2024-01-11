@@ -114,3 +114,4 @@ galleryList.addEventListener('click', event => {
 		}
 	}
 });
+1
