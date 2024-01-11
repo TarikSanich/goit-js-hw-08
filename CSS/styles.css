@@ -1,13 +1,43 @@
-/* Стилі для галереї та модального вікна */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    /* Додайте інші стилі за бажанням */
+* {
+    box-sizing: border-box;
 }
 
-/* Додайте інші стилі для модального вікна */
+img {
+    display: block;
+}
 
-.modal {
-    display: none;
-    /* Додайте стилі для центрування та відображення модального вікна поверх вмісту */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: block;
+    width: 1440px;
+    height: 696px;
+    padding: 24px;
+}
+
+.gallery {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-image:hover {
+    transform: scale(1.025);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
